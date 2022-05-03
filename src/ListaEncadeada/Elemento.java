@@ -1,3 +1,5 @@
+package ListaEncadeada;
+
 public class Elemento {
     int dado;//qualquer coisa
     Elemento prox;

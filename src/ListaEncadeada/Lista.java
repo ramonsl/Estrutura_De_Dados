@@ -1,3 +1,7 @@
+package ListaEncadeada;
+
+import ListaEncadeada.Elemento;
+
 public class Lista {
     //descritor --descreve a lista
     Elemento inicio;
