@@ -44,6 +44,7 @@ public class Main {
                     if (!numeros.exibir()){
                         System.out.println("Lista Vazia");
                     }
+
                     break;
                 }
                 case 4:{
