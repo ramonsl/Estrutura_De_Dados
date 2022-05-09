@@ -8,4 +8,8 @@ public class Elemento {
        dado= value;
     }
 
+    public void show(){
+        System.out.println("Valor:"+dado);
+    }
+
 }

@@ -14,6 +14,15 @@ public class Main {
             System.out.println("3. para exibir a lista");
             System.out.println("4. para exibir o primeiro elemento da lista");
             System.out.println("5. para exibir o ultimo elemento da lista");
+            System.out.println("6. para remover no fim");
+            System.out.println("7. para remover no inicio");
+
+            //TDEEEEEEEEEE
+            System.out.println("8. para remover uma posição");
+            System.out.println("9. para remover um valor");
+            System.out.println("10. para pesquisar um valor");
+
+
             System.out.println("99. para  sair");
             op=tc.nextInt();
             switch (op){
@@ -31,6 +40,38 @@ public class Main {
                     numeros.addFim(e);
                     break;
                 }
+                case 3:{
+                    if (!numeros.exibir()){
+                        System.out.println("Lista Vazia");
+                    }
+                    break;
+                }
+                case 4:{
+                    if (!numeros.getInicio()){
+                        System.out.println("Lista Vazia");
+                    }
+                    break;
+                }
+                case 5:{
+                    if (!numeros.getFim()){
+                        System.out.println("Lista Vazia");
+                    }
+                    break;
+                }
+                case 6:{
+                    if(numeros.delFim()){
+                        System.out.println("Elemento removido");
+                    }
+                    break;
+                }
+                case 7:{
+                    if(numeros.delInicio()){
+                        System.out.println("Elemento removido");
+                    }
+                    break;
+                }
+
+
             }
 
         }while (op!=99);
