@@ -110,4 +110,50 @@ public class Lista {
         }
     }
 
+    public int find(int numero){
+        int posicao=-1;
+        if(inicio!=null){
+            Elemento aux= inicio;
+            while (aux!=null){
+                posicao++;
+                if(aux.dado==numero){
+                    return posicao;
+                }
+                aux=aux.prox;
+            }
+            return -1;
+        }else{
+            //System.out.println("Lista vazia");
+            return -1;
+        }
+    }
+    public boolean removerValor(int valor){
+        int posicao = find(valor);
+        return  removerPosicao(posicao);
+    }
+    public boolean removerPosicao(int posicao){
+        if(posicao>quantidade){
+            return false;
+        }else{
+        if(posicao==-1){
+            return false;
+        }else{
+            if (posicao==0){
+                return delInicio();
+            } else if (posicao==quantidade-1) {
+                return delFim();
+            }else{
+                Elemento aux= inicio;
+                Elemento ant=inicio;
+                for(int i=0;i<posicao;i++){
+                    ant=aux;
+                    aux=aux.prox;
+                }
+                ant.prox=aux.prox;
+                quantidade--;
+                return true;
+            }
+        }
+        }
+    }
 }

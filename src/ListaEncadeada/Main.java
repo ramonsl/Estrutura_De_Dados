@@ -71,7 +71,25 @@ public class Main {
                     }
                     break;
                 }
+                case 8:{
+                    System.out.println("Remover a posicao 3");
+                    System.out.println(numeros.removerPosicao(3));
+                    break;
+                }
 
+                case 9:{
+                    System.out.println("Remover o valor 10");
+                    System.out.println(numeros.removerValor(10));
+                    break;
+                }
+                case 10:{
+                    int posicao=numeros.find(8);
+                    if(posicao!=-1){
+                        System.out.println("O Elemento está na posição "+posicao);
+
+                    }
+                    break;
+                }
 
             }
 
